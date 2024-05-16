@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -36,7 +38,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController userTypeIdNoController = TextEditingController();
   TextEditingController adminAccessNo = TextEditingController();
 
-  bool _toggleVisibility = true;
   bool checkedValue = false;
 
   String dropdownvalue = 'Student';
@@ -459,7 +460,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   return "Please enter a valid email";
                 } else if (!value.contains("@") && !value.contains(".")) {
                   return "Please enter a valid email";
-                } else if (value.isEmpty || value == "" || value == null) {
+                } else if (value.isEmpty || value == "") {
                   return "Please enter a valid email";
                 } else if (value == " ") {
                   return "Please enter a valid email";

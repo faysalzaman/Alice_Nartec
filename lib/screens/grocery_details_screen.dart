@@ -5,7 +5,6 @@ import 'package:grosshop/utils/dimensions.dart';
 import 'package:grosshop/utils/strings.dart';
 import 'package:grosshop/widgets/back_widget.dart';
 import 'package:grosshop/widgets/add_quantity_widget.dart';
-import 'package:grosshop/widgets/primary_button_widget.dart';
 import 'package:grosshop/widgets/secondary_button_widget.dart';
 
 import 'package:get/get.dart';
@@ -16,20 +15,20 @@ import 'dart:convert';
 import 'dashboard/cart_screen.dart';
 
 class GroceryDetailsScreen extends StatefulWidget {
-  String productName;
-  String offerPrice;
-  String retailPrice;
-  String images;
-  String id;
-  String userId;
-  String productItemCode;
-  int gtin;
-  String description;
-  String productPhotoIdNo;
-  String productOnSale;
-  String itemBackNo;
-  String itemSerialNo;
-  String itemAvailableQty;
+  final String productName;
+  final String offerPrice;
+  final String retailPrice;
+  final String images;
+  final String id;
+  final String userId;
+  final String productItemCode;
+  final int gtin;
+  final String description;
+  final String productPhotoIdNo;
+  final String productOnSale;
+  final String itemBackNo;
+  final String itemSerialNo;
+  final String itemAvailableQty;
 
   GroceryDetailsScreen({
     Key? key,

@@ -1,29 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_paypal/flutter_paypal.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:grosshop/screens/NFC/cash_instruction_screen.dart';
 import 'package:grosshop/screens/NFC/paypal_instruction_screen.dart';
 import 'package:grosshop/screens/NFC/stcpay_instruction_screen.dart';
-import 'package:grosshop/screens/dashboard_screen.dart';
-import 'package:moyasar_payment/model/paymodel.dart';
-import 'package:moyasar_payment/model/source/stcpaymodel.dart';
-import 'package:moyasar_payment/moyasar_payment.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class EnterAmountScreen extends StatefulWidget {
-  String typeOfPayment;
-
-  String id;
-  String userId;
-  String nfcSerialNo;
-  String nfcCardType;
-  String nfcDetails;
-  String cardAvailableAmount;
+  final String typeOfPayment;
+  final String id;
+  final String userId;
+  final String nfcSerialNo;
+  final String nfcCardType;
+  final String nfcDetails;
+  final String cardAvailableAmount;
 
   EnterAmountScreen({
     Key? key,

@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:grosshop/utils/custom_color.dart';
-import 'package:grosshop/utils/strings.dart';
 import 'package:grosshop/utils/dimensions.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 class AddQuantityWidget extends StatefulWidget {
-  int qty;
-  VoidCallback addCart;
-  VoidCallback minusCart;
+  final int qty;
+  final VoidCallback addCart;
+  final VoidCallback minusCart;
 
   AddQuantityWidget({
     required this.qty,

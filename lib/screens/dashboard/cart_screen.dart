@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:grosshop/model/Products/GetAllProductsModel.dart';
 import 'package:grosshop/model/Products/get_cart_by_id_model.dart';
 import 'package:grosshop/screens/checkout_screen.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:get/get.dart';
-import 'package:money_converter/Currency.dart';
-import 'package:money_converter/money_converter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'package:flutter_paypal/flutter_paypal.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});

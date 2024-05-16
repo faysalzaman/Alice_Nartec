@@ -1,23 +1,21 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
-import 'package:grosshop/screens/dashboard/home_screen.dart';
 import 'package:grosshop/staff/attendance_screen.dart';
 import 'package:intl/intl.dart';
-import 'package:nfc_manager/nfc_manager.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:get/get.dart';
 
 import '../model/attendance_model.dart';
-import '../model/get_user_loginId_by_Nfc_Model.dart';
 
 class AttendanceDetailScreen extends StatefulWidget {
-  String name;
-  String email;
-  String mobile;
-  String nfc;
-  String userId;
+  final String name;
+  final String email;
+  final String mobile;
+  final String nfc;
+  final String userId;
 
   AttendanceDetailScreen({
     Key? key,

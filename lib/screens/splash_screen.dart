@@ -1,12 +1,8 @@
 import 'package:get/get.dart';
 import 'package:grosshop/screens/auth/sign_in_screen.dart';
-import 'package:grosshop/screens/dashboard/home_screen.dart';
-import 'package:grosshop/utils/custom_color.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:grosshop/screens/onboard/on_board_screen.dart';
 import 'package:hive/hive.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

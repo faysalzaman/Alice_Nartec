@@ -3,9 +3,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:grosshop/utils/strings.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:grosshop/screens/dashboard/home_screen.dart';
-import 'package:grosshop/screens/dashboard/order_screen.dart';
 import 'package:grosshop/screens/dashboard/profile_screen.dart';
-import 'package:grosshop/screens/dashboard/my_cart_screen.dart';
 
 import 'dashboard/cart_screen.dart';
 

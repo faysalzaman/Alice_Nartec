@@ -9,12 +9,12 @@ import '../../utils/dimensions.dart';
 import '../../utils/strings.dart';
 
 class NFCDetail extends StatefulWidget {
-  String id;
-  String userId;
-  String nfcSerialNo;
-  String nfcCardType;
-  String nfcDetails;
-  String cardAvailableAmount;
+  final String id;
+  final String userId;
+  final String nfcSerialNo;
+  final String nfcCardType;
+  final String nfcDetails;
+  final String cardAvailableAmount;
 
   NFCDetail({
     required this.id,

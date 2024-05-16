@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:convert';
 
 import 'package:grosshop/model/get_all_users_model.dart';
@@ -63,6 +65,7 @@ class _SignInScreenState extends State<SignInScreen> {
     } else {
       print("status code 400");
     }
+    return null;
   }
 
   @override

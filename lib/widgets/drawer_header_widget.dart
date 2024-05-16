@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:grosshop/utils/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:grosshop/utils/dimensions.dart';
 import 'package:grosshop/screens/dashboard/profile_screen.dart';
@@ -9,7 +8,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../model/get_user_by_id_model.dart';
 
-import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -26,7 +24,6 @@ class _DrawerHeaderWidgetState extends State<DrawerHeaderWidget> {
 
   String image = '';
 
-  File? _image;
   final picker = ImagePicker();
 
   Future<GetUserByIdModel> getUserById() async {

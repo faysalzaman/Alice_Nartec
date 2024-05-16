@@ -15,7 +15,6 @@ import 'dart:convert';
 import 'package:get/get.dart';
 
 import '../../model/get_user_by_id_model.dart';
-import '../../model/update_user_by_id_model.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override

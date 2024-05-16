@@ -7,7 +7,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -400,12 +399,11 @@ class _AddProductScreenState extends State<AddProductScreen> {
 }
 
 class TextFieldWidget extends StatelessWidget {
-  String name;
-  Function onPressed;
-  String title;
-  Widget? suffixIcon;
-
-  TextEditingController controller;
+  final String name;
+  final Function onPressed;
+  final String title;
+  final Widget? suffixIcon;
+  final TextEditingController controller;
 
   TextFieldWidget({
     super.key,

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -11,20 +13,20 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UpdateProductScreen extends StatefulWidget {
-  String productName;
-  String offerPrice;
-  String retailPrice;
-  String images;
-  String id;
-  String userId;
-  String productItemCode;
-  int gtin;
-  String description;
-  String productPhotoIdNo;
-  String productOnSale;
-  String itemBackNo;
-  String itemSerialNo;
-  String itemAvailableQty;
+  final String productName;
+  final String offerPrice;
+  final String retailPrice;
+  final String images;
+  final String id;
+  final String userId;
+  final String productItemCode;
+  final int gtin;
+  final String description;
+  final String productPhotoIdNo;
+  final String productOnSale;
+  final String itemBackNo;
+  final String itemSerialNo;
+  final String itemAvailableQty;
 
   UpdateProductScreen({
     required this.productName,
@@ -321,7 +323,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: "Fill Some Name",
                       onPressed: (value) {
                         if (value.isEmpty)
@@ -332,7 +334,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _productNameController,
                       name: "Product Name"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: "Fill The Field",
                       onPressed: (value) {
                         if (value.isEmpty)
@@ -343,7 +345,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _productItemCode,
                       name: "Product Item Code"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                     title: "Fill The Field",
                     onPressed: (value) {
                       if (value.isEmpty)
@@ -355,7 +357,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                     name: "GTIN",
                   ),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: "Fill the price in numbers.",
                       onPressed: (value) {
                         if (value.isEmpty || value.numericOnly() == false)
@@ -366,7 +368,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _retailPriceController,
                       name: "Retail Price"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: 'Fill the price in numbers.',
                       onPressed: (value) {
                         if (value.isEmpty || value.numericOnly() == false)
@@ -377,7 +379,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _offerPriceController,
                       name: "Offer Price"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: 'Fill just True and False',
                       onPressed: (value) {
                         if (value.isEmpty || !value.isBool)
@@ -388,7 +390,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _productOnSellController,
                       name: "Product On Sell"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: 'Fill the field',
                       onPressed: (value) {
                         if (value.isEmpty)
@@ -399,7 +401,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       controller: _itemUnitController,
                       name: "Item Unit"),
                   const SizedBox(height: 5),
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: '12/12/2000',
                       onPressed: (value) {
                         if (value.isEmpty)
@@ -411,7 +413,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                       name: "Item Expiry Date"),
                   const SizedBox(height: 5),
 
-                  TextFieldWidget(
+                  AppTextFieldWidget(
                       title: "Fill the Quality",
                       onPressed: (value) {
                         if (value.isEmpty || value.numericOnly() == false)
@@ -515,14 +517,14 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
   }
 }
 
-class TextFieldWidget extends StatelessWidget {
-  String name;
-  Function onPressed;
-  String title;
+class AppTextFieldWidget extends StatelessWidget {
+  final String name;
+  final Function onPressed;
+  final String title;
 
   TextEditingController controller;
 
-  TextFieldWidget({
+  AppTextFieldWidget({
     super.key,
     required this.controller,
     required this.name,

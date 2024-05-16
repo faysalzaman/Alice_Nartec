@@ -3,7 +3,6 @@ import 'package:grosshop/model/admin/get_all_registered_user_model.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:get/get.dart';
 
 class RegisteredUsersScreen extends StatefulWidget {
   const RegisteredUsersScreen({super.key});

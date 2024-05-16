@@ -3,12 +3,12 @@ import 'package:get/get.dart';
 import 'package:grosshop/screens/NFC/enter_amount_screen.dart';
 
 class SelectPaymentMethod extends StatefulWidget {
-  String id;
-  String userId;
-  String nfcSerialNo;
-  String nfcCardType;
-  String nfcDetails;
-  String cardAvailableAmount;
+  final String id;
+  final String userId;
+  final String nfcSerialNo;
+  final String nfcCardType;
+  final String nfcDetails;
+  final String cardAvailableAmount;
 
   SelectPaymentMethod({
     Key? key,

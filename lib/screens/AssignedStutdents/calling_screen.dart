@@ -10,8 +10,8 @@ import 'package:grosshop/screens/AssignedStutdents/add_sudents_screen.dart';
 import 'package:http/http.dart' as http;
 
 class CallingScreen extends StatefulWidget {
-  String userId;
-  List<String> associateId;
+  final String userId;
+  final List<String> associateId;
 
   CallingScreen({
     Key? key,

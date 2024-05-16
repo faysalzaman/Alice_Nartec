@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:grosshop/Reseller/add_product_screen.dart';
@@ -181,20 +183,20 @@ class _MyProductsScreenState extends State<MyProductsScreen> {
 }
 
 class MyProductCardWidget extends StatelessWidget {
-  String productName;
-  String offerPrice;
-  String retailPrice;
-  String productImage;
-  String id;
-  String userId;
-  String productItemCode;
-  int gtin;
-  String description;
-  String productPhotoIdNo;
-  String productOnSale;
-  String itemBackNo;
-  String itemSerialNo;
-  String itemAvailableQty;
+  final String productName;
+  final String offerPrice;
+  final String retailPrice;
+  final String productImage;
+  final String id;
+  final String userId;
+  final String productItemCode;
+  final int gtin;
+  final String description;
+  final String productPhotoIdNo;
+  final String productOnSale;
+  final String itemBackNo;
+  final String itemSerialNo;
+  final String itemAvailableQty;
   List<String> imageId = [];
 
   MyProductCardWidget({

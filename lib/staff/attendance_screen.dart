@@ -1,15 +1,13 @@
+// ignore_for_file: unused_field
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:grosshop/staff/attendance_detail_screen.dart';
 import 'package:nfc_manager/nfc_manager.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-import '../model/attendance_model.dart';
 import '../model/get_user_loginId_by_Nfc_Model.dart';
-import '../screens/dashboard/home_screen.dart';
-import '../widgets/back_widget.dart';
 
 import 'package:http/http.dart' as http;
 

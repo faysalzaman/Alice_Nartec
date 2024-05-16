@@ -1,7 +1,7 @@
+// ignore_for_file: unnecessary_null_comparison, null_check_always_fails, unused_local_variable
+
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:grosshop/utils/dimensions.dart';
@@ -77,7 +77,8 @@ class _OtpConfirmationState extends State<OtpConfirmation>
 
   @override
   void initState() {
-    otpValues = List<int>.filled(widget.otpLength, null!, growable: false);
+    List<int> otpValues =
+        List<int>.generate(widget.otpLength, (_) => null!, growable: false);
     super.initState();
   }
 

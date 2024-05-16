@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:grosshop/model/Products/get_product_by_user_id_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -32,7 +31,7 @@ class _SeeAllProductsScreenState extends State<SeeAllProductsScreen> {
       if (response.statusCode == 200) {
         print('response: ${response.body}');
         var data = GetProductByUserIdModel.fromJson(jsonDecode(response.body));
-        return GetProductByUserIdModel.fromJson(jsonDecode(response.body));
+        return data;
       } else {
         throw Exception('No data found!');
       }

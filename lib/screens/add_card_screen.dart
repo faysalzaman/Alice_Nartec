@@ -11,10 +11,10 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class AddCardScreen extends StatefulWidget {
-  String userId;
-  String nfcSerialNo;
-  String nfcCardType;
-  String nfcDetails;
+  final String userId;
+  final String nfcSerialNo;
+  final String nfcCardType;
+  final String nfcDetails;
 
   AddCardScreen({
     required this.userId,
@@ -201,7 +201,7 @@ class _AddCardScreenState extends State<AddCardScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  primary: CustomColor.primaryColor,
+                  backgroundColor: CustomColor.primaryColor,
                 ),
                 child: Container(
                   height: Dimensions.buttonHeight,

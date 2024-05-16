@@ -1,11 +1,11 @@
+// ignore_for_file: must_be_immutable, unused_element
+
 import 'package:flutter/material.dart';
-import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import 'package:grosshop/data/category.dart';
 import 'package:grosshop/data/discount.dart';
 import 'package:grosshop/data/grocery.dart';
-import 'package:grosshop/model/get_queue_byId_model.dart';
 import 'package:grosshop/screens/AssignedStutdents/add_sudents_screen.dart';
 import 'package:grosshop/screens/dashboard/profile_screen.dart';
 import 'package:grosshop/staff/attendance_screen.dart';
@@ -19,9 +19,6 @@ import 'package:hive/hive.dart';
 import 'package:grosshop/screens/category_details_screen.dart';
 import 'package:grosshop/screens/grocery_details_screen.dart';
 import 'package:grosshop/screens/filter_screen.dart';
-import 'package:grosshop/screens/drawer/my_coupon_screen.dart';
-import 'package:grosshop/screens/drawer/change_password_screen.dart';
-import 'package:grosshop/screens/drawer/messaging_screen.dart';
 import 'package:grosshop/screens/auth/sign_in_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -992,20 +989,20 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class MyProductCardWidget extends StatelessWidget {
-  String productName;
-  String offerPrice;
-  String retailPrice;
-  String productImage;
-  String id;
-  String userId;
-  String productItemCode;
-  int gtin;
-  String description;
-  String productPhotoIdNo;
-  String productOnSale;
-  String itemBackNo;
-  String itemSerialNo;
-  String itemAvailableQty;
+  final String productName;
+  final String offerPrice;
+  final String retailPrice;
+  final String productImage;
+  final String id;
+  final String userId;
+  final String productItemCode;
+  final int gtin;
+  final String description;
+  final String productPhotoIdNo;
+  final String productOnSale;
+  final String itemBackNo;
+  final String itemSerialNo;
+  final String itemAvailableQty;
   List<String> imageId = [];
 
   MyProductCardWidget({

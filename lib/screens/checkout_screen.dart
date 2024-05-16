@@ -3,10 +3,10 @@ import 'package:flutter_paypal/flutter_paypal.dart';
 import 'package:get/get.dart';
 
 class CheckoutScreen extends StatefulWidget {
-  String totalAmount;
-  String itemQuantity;
-  String itemName;
-  String itemPrice;
+  final String totalAmount;
+  final String itemQuantity;
+  final String itemName;
+  final String itemPrice;
 
   CheckoutScreen({
     Key? key,
@@ -21,14 +21,14 @@ class CheckoutScreen extends StatefulWidget {
 }
 
 class _CheckoutScreenState extends State<CheckoutScreen> {
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _phoneController = TextEditingController();
-  TextEditingController _cityController = TextEditingController();
-  TextEditingController _countryController = TextEditingController();
-  TextEditingController _zipCodeController = TextEditingController();
-  TextEditingController _stateController = TextEditingController();
-  TextEditingController _addressController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
+  TextEditingController cityController = TextEditingController();
+  TextEditingController countryController = TextEditingController();
+  TextEditingController zipCodeController = TextEditingController();
+  TextEditingController stateController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
 
   final double deliveryFee = 4;
   double totalAmount = 0;
